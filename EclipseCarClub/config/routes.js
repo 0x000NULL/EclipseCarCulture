@@ -20,6 +20,9 @@ module.exports.routes = {
   'GET /legal/terms':        { action:   'legal/view-terms' },
   'GET /legal/privacy':      { action:   'legal/view-privacy' },
   'GET /contact':            { action:   'view-contact' },
+  'GET /gallery':            { view: 'pages/gallery' },
+  'GET /store':              { view: 'pages/store' },
+  'GET /donate':             { view: 'pages/donate' },
 
   'GET /signup':             { action: 'entrance/view-signup' },
   'GET /email/confirm':      { action: 'entrance/confirm-email' },
@@ -32,6 +35,9 @@ module.exports.routes = {
   'GET /account':            { action: 'account/view-account-overview' },
   'GET /account/password':   { action: 'account/view-edit-password' },
   'GET /account/profile':    { action: 'account/view-edit-profile' },
+
+
+  'get /gallery': {    view: 'pages/gallery'},
 
 
   //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗

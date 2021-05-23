@@ -1,7 +1,7 @@
 {
   "name": "eclipse-car-club",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
@@ -31,9 +31,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/eclipse-car-club.git"
+    "url": "git://github.com/0x000NULL/EclipseCarCulture"
   },
-  "author": "anonymous node/sails user",
+  "author": "Ethan Aldrich",
   "license": "",
   "engines": {
     "node": "^16.1"
