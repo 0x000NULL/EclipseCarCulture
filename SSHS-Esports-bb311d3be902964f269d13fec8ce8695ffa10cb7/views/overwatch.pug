@@ -1,0 +1,66 @@
+extends layout
+
+block content
+    .main#main
+        .jumbotron.jumbotron-fluid.overwatch-banner
+            .container
+                strong
+                    h1.display-4.text-light.text-center.mb-3 Overwatch   
+                p.lead.text-light.text-center Competitive Overwatch
+        .container
+            .row.justify-content-md-left.mb-5
+                .col-sm-auto
+                    .media
+                        img.mr-3(src='/images/overwatch-logo.png' alt='Overwatch logo' width=120 height=120)
+                        .media-body
+                            h5.mt-0 About
+                            p.mb-0.about Overwatch is a team-based multiplayer first-person shooter developed and published by Blizzard Entertainment and released on May 24, 2016, for PlayStation 4, Xbox One, and Windows. Described as a "hero shooter," Overwatch assigns players into two teams of six, with each player selecting from a roster of over 30 characters, known as "heroes," each with a unique style of play that is divided into three general roles that fit their purpose. Players on a team work together to secure and defend control points on a map or escort a payload across the map in a limited amount of time.
+
+            //.row.justify-content-md-left.mb-5
+                .col-sm-auto
+                    .media
+                        img.mr-3(src='/images/minecraft-1-logo-png-transparent.png' alt='MC logo' width=120 height=120)
+                        .media-body
+                            h5.mt-0 Team Registry
+                            p.mb-0 You can register your team using the link below, but be sure to read ALL of the rules!
+                            a.btn.btn-dark(href='#' role='button').mt-2 Register your team
+            .row.justify-content-md-left.mb-5
+                .col-sm-auto
+                    .media
+                        img.mr-3(src='/images/overwatch-logo.png' alt='Overwatch logo' width=120 height=120)
+                        .media-body
+                            h5.mt-0 Team Registry
+                            p.mb-0 You can register your team in person at the venue.
+            //.row.justify-content-md-left.mb-5
+                .col-sm-auto
+                    .media
+                        img.mr-3(src='/images/overwatch-logo.png' alt='Overwatch logo' width=120 height=120)
+                        .media-body
+                            h5.mt-0 Ruleset
+                            h6.mt-0 Lobby Rules
+                            ul.mb-0
+                                li Skins must be turned off.
+                                li Competitive rules are required to be turned on.
+                                li Player subtitutions are allowed.
+                                li There will be two (2) minutes of brek between each map.
+                                li Teams are allowed to have a maximum of eight (8) players.
+                            h6.mt-0 Map Selection
+                                li The first map will be decided by the winner of a coin toss.
+                                li the following maps will be choosen by the loosing team.
+                            h6.mt-0 Map Rotations
+                                li Control maps will be played first.
+                                li Escort maps will be played second.
+                                li Assult maps will be played third.
+                                li An hybrid map will be played fourth.
+                            h6.mt-0 Map Pool
+                                li Table Here
+
+                            h6.mt-0 Tiebreaker
+                                li If both teams are tied at the end of the fourth map, a second control map will be played to choose a winner.
+            .row.justify-content-md-left.mb-5
+                .col-sm-auto
+                    .media
+                        img.mr-3(src='/images/overwatch-logo.png' alt='Overwatch logo' width=120 height=120)
+                        .media-body
+                            h5.mt-0 Ruleset
+                            iframe(src="/misc/SSES_Overwatch_Ruleset_FINAL.pdf" width="300%" height="500px")
