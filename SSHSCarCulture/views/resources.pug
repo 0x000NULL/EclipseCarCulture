@@ -1,0 +1,19 @@
+﻿extends layout
+
+block content
+    .main#main
+        .jumbotron.jumbotron-fluid(background='#000')
+            .container
+                strong
+                    h1.display-4.text-light.text-center.mb-3(background='black') Resources
+                p.lead.text-light.text-center
+        .container
+            .row.justify-content-md-left.mb-5
+                .col-sm-auto
+                    .media
+                        img.mr-3(src='/images/eclipse.png' alt='League of Legends logo' width=120 height=120)
+                        .media-body
+                            h5.mt-0 Map
+                            div.map(class=map)
+                                iframe(src='https://www.google.com/maps/d/embed?mid=1Kfryne-la1dxGMLVT_d8h9Y0wgQMIcBs' width='200%' height='480')
+                            p.map Here is a map full of important locations in relation to the group!

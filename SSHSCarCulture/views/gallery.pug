@@ -1,0 +1,48 @@
+﻿extends layout
+block head
+	link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', rel='stylesheet')
+	script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js')
+	// ---- Include the above in your HEAD tag --------
+	link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+	title= title
+	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet")
+	link(rel='stylesheet' href='css/all.css')
+	link(rel='icon' type='image/x-icon' href='/images/favicon.new.ico')
+	link(rel='stylesheet' href='/stylesheets/style.css')
+	link(rel='stylesheet' href='/stylesheets/leaderboards.css' media='screen')
+	link(rel='stylesheet' href='/stylesheets/media_queries.css')
+	link(rel='stylesheet' href='/css/gallery.css')
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+	script(src="/js/norc.js")
+	script(src="/js/mail.js")
+	script(src="/js/dropdown.js")
+	script(src="/js/gallery.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+	meta(name='viewport' content='width=device-width, initial-scale=1.0')
+	meta(charset='utf-8')
+	// Animate CSS
+	link(href='/css/animate.css', rel='stylesheet')
+	// Popup Lightbox Js
+	script(src='/js/jquery.popup.lightbox.js')
+	// Popup Lightbox CSS
+	link(href='/css/popup-lightbox.css', rel='stylesheet')
+	script.
+
+		$(document).ready(function () {
+
+			$(".img-container").popupLightbox();
+
+
+		});
+
+block content
+	// Introduction and Demo Only
+	main
+		article
+
+			.img-container
+				img(src='/images/jquery-lightbox-image2.jpg', alt='lightbox image 2')
+				img(src='/images/jquery-lightbox-image3.jpg', alt='lightbox image 3')
+				img(src='/images/jquery-lightbox-image1.jpg', alt='Effel Tower')
+				img(src='/images/jquery-lightbox-image4.jpg', alt='lightbox image 4')
