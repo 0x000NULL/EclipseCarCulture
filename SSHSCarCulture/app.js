@@ -84,6 +84,15 @@ app.use('/team', team);
 app.use('/solo', solo);
 app.use('/oneoff', oneoff);
 
+
+//var connection = mysql.createConnection({
+//    host     : 'localhost',
+//    user     : 'root',
+//    password : 'Painkiller69!',
+//    database : 'nodelogin'
+//});
+
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
