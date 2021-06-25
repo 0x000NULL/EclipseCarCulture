@@ -4,8 +4,8 @@ var debug = require('debug');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
-var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 var fs = require('fs');
 var http = require('http');
 var https = require('https');
@@ -13,6 +13,8 @@ var express = require('express')
     , cons = require('consolidate')
     , app = express();
 var engines = require('consolidate');
+var passport = require('passport')
+    , LocalStrategy = require('passport-local').Strategy;
 const nodemailer = require('nodemailer');
 const nodemailerSendgrid = require('nodemailer-sendgrid');
 const transport = nodemailer.createTransport(
@@ -22,7 +24,6 @@ const transport = nodemailer.createTransport(
 );
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 var others = require('./routes/others')
 var league = require('./routes/league')
 var smash = require('./routes/smash-info');
@@ -37,7 +38,7 @@ var blog = require('./routes/blog');
 var help = require('./routes/help');
 var resources = require('./routes/resources');
 var solo = require('./routes/solo');
-var team = require('./routes/team');
+var signin = require('./routes/signin');
 var oneoff = require('./routes/oneoff');
 
 var app = express();
@@ -61,13 +62,11 @@ app.set('view engine', 'html'); // also 'html' here.;
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', routes);
 app.use('/smash', smash);
-app.use('/users', users);
 app.use('/about', about);
 app.use('/league', league);
 app.use('/others', others);
@@ -80,11 +79,11 @@ app.use('/leagueinfo', leagueinfo);
 app.use('/blog', blog);
 app.use('/help', help);
 app.use('/resources', resources);
-app.use('/team', team);
+app.use('/signin', signin);
 app.use('/solo', solo);
 app.use('/oneoff', oneoff);
 
-
+//DataBaseController
 //var connection = mysql.createConnection({
 //    host     : 'localhost',
 //    user     : 'root',
