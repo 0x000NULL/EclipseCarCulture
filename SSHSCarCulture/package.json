@@ -1,17 +1,18 @@
 {
-  "name": "SilverStateEsports",
-  "version": "3.10.2",
+  "name": "EclipseCarCultureSite",
+  "version": "0.5.2",
   "private": true,
   "scripts": {
     "start": "node app.js",
     "install": "npm install",
     "test": "mocha"
   },
-  "description": "Silver State Esports",
+  "description": "Eclipse Car Culture Website and App",
   "author": " Ethan Aldrich",
   "contributors": [
     {
-      "name": "Billy Myers"
+      "name": "Anakin Conteras",
+	  "name": "Vena Fujimoto"
     }
   ],
   "dependencies": {
