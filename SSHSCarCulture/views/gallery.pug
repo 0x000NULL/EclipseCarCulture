@@ -2,19 +2,28 @@
 
 block content
 	.main#main
-	section#gallery.section-bg
-	.container
-		header.section-header(style='color: #A21C3A;')
-			h3 Gallery
-			p
-				| General Blurb about us
-		.row
-			.col-sm
-				img(src='/images/jquery-lightbox-image4.jpg', alt='lightbox image 4', width='100%')
-			.col-sm
-				img(src='/images/jquery-lightbox-image1.jpg', alt='Effel Tower', width='100%')
-		.row
-			.col-sm
-				img(src='/images/jquery-lightbox-image3.jpg', alt='lightbox image 3', width='100%')
-			.col-sm
-				img(src='/images/jquery-lightbox-image2.jpg', alt='lightbox image 2', width='100%')
+		.jumbotron.jumbotron-fluid(background='#000')
+			.container
+				strong
+					h1.display-4.text.text-center.mb-3(color='black') Gallery
+				p.lead.text.text-center In progress
+		//.container-gal
+			table
+				caption Alien football stars
+				tbody
+					tr
+						th(scope='col') Player
+						th(scope='col') Gloobles
+						th(scope='col') Za'taak
+					tr
+						th(scope='row') TR-7
+						td 7
+						td 4,569
+					tr
+						th(scope='row') Khiresh Odo
+						td 7
+						td 7,223
+					tr
+						th(scope='row') Mia Oolong
+						td 9
+						td 6,219
