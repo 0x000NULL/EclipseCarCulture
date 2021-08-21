@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/0x000NULL/EclipseCarCulture">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="SSHSCarCulture\public\images\eclipse_Logo.png" alt="Logo" height="150">
   </a>
 
   <h3 align="center">Eclipse Car Culture</h3>
@@ -27,10 +27,10 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/0x000NULL/EclipseCarCulture"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/0x000NULL/EclipseCarCulture/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/0x000NULL/EclipseCarCulture">View Demo</a>
+    <a href="http://eclipse.ethanaldrich.net/">View The Site</a>
     ·
     <a href="https://github.com/0x000NULL/EclipseCarCulture/issues">Report Bug</a>
     ·
@@ -48,6 +48,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+
       </ul>
     </li>
     <li>
@@ -80,11 +81,21 @@ Here's a blank template to get started:
 
 ### Built With
 
+<!--* [Node.js]()
+* [Pug]()
 * []()
-* []()
-* []()
-
-
+-->
+<ul>
+	<li>Node.js</li>
+	<li>Pug</li>
+	<li>LESS</li>
+	<li>git</li>
+	<li>mocha</li>
+	<li>express.js</li>
+	<li>Passport</li>
+	<li>mySQL</li>
+	<li>WebPack</li>
+</ul>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -151,11 +162,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
+<!--
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
 
 Project Link: [https://github.com/0x000NULL/EclipseCarCulture](https://github.com/0x000NULL/EclipseCarCulture)
-
-
+-->
+#TBD
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
