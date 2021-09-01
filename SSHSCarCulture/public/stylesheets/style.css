@@ -314,6 +314,18 @@
 }
 
 /* Gallery Grid */
+#gal {
+    background-color:black;
+}
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr {
+    text-align: center;
+    vertical-align: middle;
+}
 
 .container-gal {
     display: flex;
